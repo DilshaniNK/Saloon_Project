@@ -17,6 +17,13 @@ const Hero = () => {
             </div>
         )
     }
+    const Check = (text) => {
+        return(
+            <span className='flex items-center gap-3 text-lg leading-10 text-textColor'>
+                <HiCheck className="text-white rounded-full bg-main" />{text}
+            </span>
+        )
+    }
     return (
         <div>
             <div className='min-h-[80vh]'>
@@ -70,8 +77,28 @@ const Hero = () => {
                         <img src="" alt="" className='relative z-10 rounded-full' />
                         <img src="" alt="" className='absolute left-0 main_slider_three_img bottom-14'/>
                     </div>
-                    <div></div>
+                    <div>
+                        <h4>ESSENTIAL BLANCE WELLNESS</h4>
+                        <p>
+                            we are providing the best qulity & natural spa and beauty services
+                        </p>
+                        <p>
+                            There ara many variations of passages of lorem ipsum available 
+                            but the majority have suffered alteration in some form.
+                        </p>
+                        <button className='px-12 py-4 text-xs font-semibold text-white bg-main transition-bg hover:bg-black hover:text-white'>DISCOVER MORE</button>
+                    </div>
+                    <div>
+                        <h4>OUR BENEFITS</h4>
+                        <Check text='Quality Services' />
+                        <Check text='Quality Services' />
+                        <Check text='Quality Services' />
+                        <Check text='Quality Services' />
+                        <Check text='Quality Services' />
+                        <Check text='Quality Services' />
+                    </div>
                 </div>
+                
             </section>
         </div>
     )
